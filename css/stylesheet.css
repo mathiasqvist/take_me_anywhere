@@ -1,0 +1,173 @@
+html {
+    background-color: #212121;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#worldmap {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+#worldmap img {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+
+/* Centreret modal boks */
+
+.wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+}
+
+#knap:hover,
+#knapto:hover {
+    background-color: rgba(255, 67, 42, 0.95);
+    ;
+    color: white;
+}
+
+#knap:focus,
+#knapto:focus {
+    outline: none;
+}
+
+
+/* Knap 1 og 2 med nogle animationer - Bounce */
+
+#knap {
+    position: absolute;
+    top: 350px;
+    padding: 15px 30px;
+    background-color: rgba(83, 149, 99, 0.95);
+    color: white;
+    font-size: 20px;
+    border: 1px solid rgba(83, 149, 99, 0.95);
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#knapto {
+    position: absolute;
+    display: block;
+    margin-top: 400px;
+    margin-left: -830px;
+    padding: 15px 50px;
+    background-color: rgba(83, 149, 99, 0.95);
+    color: white;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif, Helvetica;
+    -webkit-animation: bounce .9s infinite alternate;
+    -moz-animation: bounce .9s infinite alternate;
+    animation: bounce .9s infinite alternate;
+}
+
+@-webkit-keyframes bounce {
+    to {
+        -webkit-transform: scale(1.1);
+    }
+}
+
+@-moz-keyframes bounce {
+    to {
+        -moz-transform: scale(1.1);
+    }
+}
+
+@keyframes bounce {
+    to {
+        transform: scale(0.91);
+    }
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    font-family: 'Open Sans', Helvetica;
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+
+/* H3 og p styling */
+
+#result {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+#tekstboks {
+    text-align: left;
+    width: 410px;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 17px;
+    letter-spacing: 0.2px;
+    color: white;
+}
+
+
+/* Modal Image styling */
+
+#resultimg {
+    width: 500px;
+    height: 500px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+
+/* tekstboks styling */
+
+#resultdiv {
+    width: 480px;
+    height: auto;
+}
+
+
+/* Modalboks styling */
+
+.modalshow {
+    display: inline-flex;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 950px;
+    height: 520px;
+    border-radius: 8px;
+    background-color: rgba(42, 43, 41, 0.99);
+    font-family: 'Open Sans';
+    box-shadow: 5px 5px 50px white;
+}
+
+.modal {
+    display: none;
+}
